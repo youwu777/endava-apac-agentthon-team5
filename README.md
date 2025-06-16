@@ -22,15 +22,6 @@ The key features of the Marketing Agency include:
 1.  **Prerequisites**
 
     *   Python 3.11+
-    *   Poetry
-        *   For dependency management and packaging. Please follow the
-            instructions on the official
-            [Poetry website](https://python-poetry.org/docs/) for installation.
-
-        ```bash
-        pip install poetry
-        ```
-
     * A project on Google Cloud Platform
     * Google Cloud CLI
         *   For installation, please follow the instruction on the official
@@ -43,7 +34,7 @@ The key features of the Marketing Agency include:
     git clone https://github.com/adhish-endava/endava-apac-agentthon.git
     cd marketing-agency
     # Install the package and dependencies.
-    poetry install
+    pip install -r requirements.txt
     ```
 
 3.  **Configuration**
@@ -83,3 +74,5 @@ Or on a web interface:
 ```bash
  adk web
 ```
+
+If you are running in it Google Cloud Shell you can use the 'web preview' sescion on port 8000 to test your application UI
