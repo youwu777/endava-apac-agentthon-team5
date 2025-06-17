@@ -32,7 +32,7 @@ The key features of the Marketing Agency include:
     ```bash
     # Clone this repository.
     git clone https://github.com/adhish-endava/endava-apac-agentthon.git
-    cd marketing-agency
+    cd endava-apac-agentthon/marketing-agency
     # Install the package and dependencies.
     pip install -r requirements.txt
     ```
@@ -47,7 +47,7 @@ The key features of the Marketing Agency include:
         ```bash
         export GOOGLE_GENAI_USE_VERTEXAI=true
         export GOOGLE_CLOUD_PROJECT=<your-project-id>
-        export GOOGLE_CLOUD_LOCATION=<your-project-location>
+        export GOOGLE_CLOUD_LOCATION=us-central1
         export GOOGLE_CLOUD_STORAGE_BUCKET=<your-storage-bucket>  # Only required for deployment on Agent Engine
         ```
 
@@ -66,6 +66,7 @@ ADK provides convenient ways to bring up agents locally and interact with them.
 You may talk to the agent using the CLI:
 
 ```bash
+export PATH=$PATH:$HOME/.local/bin #Add ADK to your PATH
 adk run marketing_agency
 ```
 
