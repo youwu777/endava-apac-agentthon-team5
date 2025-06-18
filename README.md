@@ -47,7 +47,7 @@ The key features of the Marketing Agency include:
         ```bash
         export GOOGLE_GENAI_USE_VERTEXAI=true
         export GOOGLE_CLOUD_PROJECT=<your-project-id>
-        export GOOGLE_CLOUD_LOCATION=us-central1
+        export GOOGLE_CLOUD_LOCATION=australia-southeast1
         export GOOGLE_CLOUD_STORAGE_BUCKET=<your-storage-bucket>  # Only required for deployment on Agent Engine
         ```
 
