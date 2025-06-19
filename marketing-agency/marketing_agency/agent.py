@@ -19,6 +19,15 @@ from google.adk.tools.agent_tool import AgentTool
 
 from . import prompt
 from .sub_agents.product_name_create import product_name_create_agent
+from .sub_agents.target_customer import target_customer_agent
+from .sub_agents.benefit_research import benefit_research_agent
+from .sub_agents.feature import feature_agent
+from .sub_agents.design import design_agent
+from .sub_agents.competitor import competitor_agent
+from .sub_agents.pricing_research import pricing_research_agent
+from .sub_agents.cost_research import cost_research_agent
+from .sub_agents.channel_sales import channel_sales_agent
+from .sub_agents.marketing_content import marketing_content_agent
 
 MODEL = "gemini-2.0-flash-001" 
 
@@ -28,11 +37,23 @@ marketing_coordinator = LlmAgent(
     description=(
         "Establish a powerful online presence and connect with your audience "
         "effectively. Guide you through defining your digital identity by"
-        "choosing the perfect product name"
+        "choosing the perfect product name, identifying target customers, "
+        "researching benefits, defining features, creating designs, analyzing "
+        "competitors, developing pricing strategies, estimating costs, "
+        "planning sales channels, and creating marketing content."
     ),
     instruction=prompt.MARKETING_COORDINATOR_PROMPT,
     tools=[
         AgentTool(agent=product_name_create_agent),
+        AgentTool(agent=target_customer_agent),
+        AgentTool(agent=benefit_research_agent),
+        AgentTool(agent=feature_agent),
+        AgentTool(agent=design_agent),
+        AgentTool(agent=competitor_agent),
+        AgentTool(agent=pricing_research_agent),
+        AgentTool(agent=cost_research_agent),
+        AgentTool(agent=channel_sales_agent),
+        AgentTool(agent=marketing_content_agent),
     ],
 )
 
