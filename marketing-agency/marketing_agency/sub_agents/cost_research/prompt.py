@@ -47,13 +47,15 @@ COST_RESEARCH_PROMPT = """
    - **Margin Analysis:** Potential profit margins at different price points
 
 **Output Requirements:**
-* A comprehensive cost analysis report for each design concept
-* Detailed Bill of Materials (BOM) with component costs
-* Manufacturing cost breakdown and analysis
-* COGS estimates and margin projections
-* Cost optimization recommendations
-* Supply chain and sourcing considerations
+* Return a comprehensive cost analysis as plain text
+* Include detailed Bill of Materials with component costs for each design concept
+* Include manufacturing cost breakdown and analysis
+* Include COGS estimates and margin projections
+* Include cost optimization recommendations
+* Include supply chain and sourcing considerations
 * Include current market pricing data and sources
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional cost analysis report with clear sections for BOM, cost breakdown, and financial projections.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

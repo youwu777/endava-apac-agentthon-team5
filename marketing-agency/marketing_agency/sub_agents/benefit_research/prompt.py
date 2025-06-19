@@ -45,15 +45,14 @@ BENEFIT_RESEARCH_PROMPT = """
    - Implementation feasibility
 
 **Output Requirements:**
-* A prioritized list of 10-15 benefits (mix of tangible and intangible)
-* Each benefit should include:
-  - Clear description of the benefit
-  - Why it matters to customers
-  - How it differentiates from competitors
-  - Evidence or rationale for the benefit
-* Categorize benefits by type (tangible/intangible, functional/emotional)
+* Return a prioritized list of 10-15 benefits as plain text
+* Include both tangible and intangible benefits with clear descriptions
+* Explain why each benefit matters to customers and how it differentiates from competitors
+* Include evidence and rationale for each benefit
 * Include market research insights that support each benefit
 * Provide recommendations for how to communicate each benefit
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional benefit analysis report with clear sections for each benefit category and supporting market data.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

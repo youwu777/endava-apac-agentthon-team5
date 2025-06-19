@@ -45,16 +45,14 @@ FEATURE_PROMPT = """
    - **Won't-Have:** Features to avoid or defer
 
 **Output Requirements:**
-* A prioritized feature list with clear categorization
-* MVP feature set with justification for each inclusion
-* Future feature roadmap with implementation timeline
-* Feature prioritization rationale based on:
-  - Customer value and demand
-  - Competitive differentiation potential
-  - Technical feasibility and cost
-  - Market positioning alignment
+* Return a prioritized feature list as plain text
+* Include MVP feature set with justification for each inclusion
+* Include future feature roadmap with implementation timeline
+* Include feature prioritization rationale based on customer value, competitive differentiation, technical feasibility, and market positioning
 * Include market research insights supporting feature decisions
 * Provide recommendations for feature validation and testing
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional feature specification document with clear sections for MVP features, future roadmap, and prioritization rationale.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

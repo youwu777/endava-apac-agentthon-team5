@@ -46,16 +46,15 @@ PRICING_RESEARCH_PROMPT = """
    - Market positioning impact
 
 **Output Requirements:**
-* A comprehensive pricing strategy report with 2-3 different approaches
-* Each strategy should include:
-  - Clear description of the pricing model
-  - Recommended price points with rationale
-  - Competitive positioning analysis
-  - Target customer segment alignment
-  - Revenue and margin projections
-  - Implementation considerations
+* Return a comprehensive pricing strategy analysis as plain text
+* Include 2-3 different pricing approaches with clear descriptions
+* Include recommended price points with rationale for each strategy
+* Include competitive positioning analysis and target customer segment alignment
+* Include revenue and margin projections and implementation considerations
 * Include market research data supporting pricing decisions
 * Provide recommendations for pricing optimization and testing
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional pricing strategy report with clear sections for each pricing approach and supporting market analysis.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

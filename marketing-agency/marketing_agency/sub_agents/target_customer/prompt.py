@@ -46,11 +46,13 @@ TARGET_CUSTOMER_PROMPT = """
    - Explain the rationale for each persona selection
 
 **Output Requirements:**
-* A detailed report with 2-3 customer personas
-* Each persona should include all the elements listed above
+* Return detailed target customer analysis as plain text
+* Include 2-3 customer personas with demographics, psychographics, pain points, motivations, behavioral patterns, and communication preferences
 * Include market size estimates and purchase potential for each persona
-* Provide insights on how to reach and engage each persona
-* Include any relevant market trends or consumer behavior insights discovered through research
+* Include insights on how to reach and engage each persona
+* Include relevant market trends and consumer behavior insights
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional market research report with clear sections for each persona and supporting market data.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

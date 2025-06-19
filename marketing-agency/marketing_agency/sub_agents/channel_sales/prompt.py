@@ -46,13 +46,15 @@ CHANNEL_SALES_PROMPT = """
    - Implementation requirements and potential challenges
 
 **Output Requirements:**
-* A comprehensive sales strategy report
-* Recommended primary and secondary sales channels
-* Rationale and supporting data for each channel
-* Channel comparison matrix (cost, reach, alignment, etc.)
-* Strategic recommendations for channel mix and rollout
+* Return a comprehensive sales strategy analysis as plain text
+* Include recommended primary and secondary sales channels
+* Include rationale and supporting data for each channel
+* Include channel comparison analysis covering cost, reach, alignment, and other factors
+* Include strategic recommendations for channel mix and rollout
 * Include market research insights and data sources
 * Provide recommendations for channel testing and optimization
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional sales strategy document with clear sections for channel recommendations, rationale, and supporting research.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

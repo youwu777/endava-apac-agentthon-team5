@@ -49,12 +49,14 @@ COMPETITOR_PROMPT = """
    - Opportunities for competitive advantage
 
 **Output Requirements:**
-* A detailed competitor analysis report with 3-5 main competitors
-* Each competitor profile should include all the elements listed above
-* A competitive matrix comparing key aspects across all competitors
-* Identification of market gaps and opportunities
-* Strategic recommendations for positioning against competitors
+* Return a detailed competitor analysis as plain text
+* Include 3-5 main competitors with company profiles, product features, pricing strategy, market share, strengths, weaknesses, and target audience
+* Include competitive matrix comparing key aspects across all competitors
+* Include identification of market gaps and opportunities
+* Include strategic recommendations for positioning against competitors
 * Include market research data and sources where available
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional competitive analysis report with clear sections for each competitor and a comprehensive comparison matrix.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

@@ -46,15 +46,12 @@ DESIGN_PROMPT = """
    - Communicates the key benefits effectively
 
 **Output Requirements:**
-* 3-5 detailed design concept descriptions
-* Each concept should include:
-  - Visual design description (form, color, materials)
-  - User interface and interaction details
-  - How it addresses target persona needs
-  - Key benefit communication strategy
-  - Competitive differentiation points
+* Return 3-5 detailed design concept descriptions as plain text
+* Include visual design description, user interface details, persona alignment, benefit communication strategy, and competitive differentiation points
 * Include design rationale and inspiration sources
 * Provide recommendations for design validation and testing
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional design concept report with clear sections for each design approach and supporting research insights.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

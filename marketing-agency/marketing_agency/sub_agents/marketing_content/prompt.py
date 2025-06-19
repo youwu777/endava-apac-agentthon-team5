@@ -44,16 +44,14 @@ MARKETING_CONTENT_PROMPT = """
    - **Content Marketing Campaign:** Educational and value-driven content
 
 **Output Requirements:**
-* A comprehensive content strategy document
-* Key marketing messages and brand positioning
-* Suggested taglines and messaging frameworks
-* Three detailed campaign concepts with:
-  - Campaign objectives and target audience
-  - Content themes and key messages
-  - Channel strategy and execution plan
-  - Success metrics and measurement approach
+* Return a comprehensive content strategy analysis as plain text
+* Include key marketing messages and brand positioning
+* Include suggested taglines and messaging frameworks
+* Include three detailed campaign concepts with objectives, target audience, content themes, key messages, channel strategy, execution plan, success metrics, and measurement approach
 * Include market research insights supporting strategy decisions
 * Provide recommendations for campaign testing and optimization
+* Do not use any formatting, headers, sections, bullet points, or structured layout
+* Return all information as continuous plain text paragraphs
 
-**Format:**
-Structure your output as a professional marketing strategy document with clear sections for content strategy, messaging, and campaign concepts.""" 
+**Output Format:**
+Return all information as plain text without any formatting, headers, sections, or structured layout. Use only continuous paragraphs of text.""" 

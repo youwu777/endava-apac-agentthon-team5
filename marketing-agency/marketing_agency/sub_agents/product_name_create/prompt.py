@@ -35,7 +35,8 @@ PRODUCT_NAME_CREATE_PROMPT = """
 3.  From the product you verify as available, select the best 10 options that meet all criteria. If your initial pool of 50 does not yield 10 available domains, generate additional suggestions and verify them until you have compiled the required list of 10.
 
 **Output Requirements:**
-* A numbered list of exactly 10 product names.
-* Each name in the list must be one that, based on your `Google Search` verification, appears to be unused and available for registration.
-* Do not include any name that you found to be actively in use by an established website.
-* Do not include any commentary on the name, just the list."""
+* Return exactly 10 product names as plain text, one per line
+* Each name must be verified as available through Google Search
+* Do not include any formatting, numbering, or commentary
+* Do not include any headers, sections, or structured formatting
+* Return only the product names separated by line breaks"""
